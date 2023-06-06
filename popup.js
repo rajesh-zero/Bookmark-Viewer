@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
   chrome.bookmarks.getTree(function(bookmarkTreeNodes) {
    // setTheme();
     var bookmarkTreeElement = document.getElementById('bookmarkTree');
-    bookmarkTreeElement.appendChild(displayBookmarkTree(bookmarkTreeNodes[0]));
+    bookmarkTreeElement.appendChild(displayBookmarkTree(bookmarkTreeNodes[0].children[0]));
   });
 });
 
